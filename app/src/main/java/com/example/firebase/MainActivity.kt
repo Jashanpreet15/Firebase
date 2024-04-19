@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var button: Button
     private lateinit var destinationName: EditText
     private lateinit var destinationDescription: EditText
+    private lateinit var button5: Button
 
     // firestore
     private lateinit var db: FirebaseFirestore
@@ -41,6 +42,15 @@ if(auth.currentUser == null){
         button = findViewById(R.id.button)
         destinationName = findViewById(R.id.editTextText)
         destinationDescription = findViewById(R.id.editTextTextMultiLine)
+        button5 = findViewById(R.id.button5)
+
+
+        button5.setOnClickListener {
+            auth.signOut()
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         button.setOnClickListener {
             clickHandler()
@@ -59,6 +69,9 @@ if(auth.currentUser == null){
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
         supportActionBar?.title = "Jashanpreet kaur Bucket list"
+
+        // button to logout
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

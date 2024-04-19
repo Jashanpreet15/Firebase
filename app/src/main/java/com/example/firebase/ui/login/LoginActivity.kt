@@ -17,7 +17,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var password: EditText
     private lateinit var btn: Button
     private lateinit var auth: FirebaseAuth
-
+    private lateinit var btn4: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,10 +27,16 @@ class LoginActivity : AppCompatActivity() {
 
         username = findViewById(R.id.username)
         password = findViewById(R.id.password)
-        btn = findViewById(R.id.login)
+        btn = findViewById(R.id.loginacv)
+        btn4 = findViewById(R.id.button4)
 
         btn.setOnClickListener {
             login()
+        }
+        btn4.setOnClickListener {
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
+            finish()
         }
 
 

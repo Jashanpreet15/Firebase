@@ -16,6 +16,7 @@
     <string name="save_destination">Save Destination</string>
     <string name="already_have_an_account">Already Have an Account?</string>
     <string name="create_account">Create Account</string>
+    <string name="logout">Logout</string>
     <string-array name="destinations">
         <item>Bali</item>
         <item>Montreal</item>

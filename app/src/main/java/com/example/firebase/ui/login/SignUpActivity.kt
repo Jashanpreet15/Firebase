@@ -15,6 +15,8 @@ class SignUpActivity : AppCompatActivity() {
     private lateinit var username: EditText
     private lateinit var password: EditText
     private lateinit var btn: Button
+    private lateinit var btn2: Button
+
 
 
 
@@ -24,12 +26,27 @@ class SignUpActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         username = findViewById(R.id.username)
         password = findViewById(R.id.password)
-        btn = findViewById(R.id.login)
+        btn = findViewById(R.id.registeruser)
+        btn2 = findViewById(R.id.button2)
+
+
+
+        btn.setOnClickListener {
+            createAccount()
+        }
+        btn2.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
     }
 
 
-    private fun login(){
+
+
+
+    private fun createAccount(){
         val username = username.text.toString()
         val password = password.text.toString()
 
