@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Firebase</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_register">Register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="destination_description">Destination Description</string>
+    <string name="destination_name">Destination Name</string>
+    <string name="save_destination">Save Destination</string>
+    <string name="already_have_an_account">Already Have an Account?</string>
+    <string name="create_account">Create Account</string>
+    <string-array name="destinations">
+        <item>Bali</item>
+        <item>Montreal</item>
+        <item>Bahamas</item>
+        <item>Zanzibar</item>
+        <item>Mumbai</item>
+        <item>Dubai</item>
+        <item>Oklahoma</item>
+        <item>Mombasa</item>
+        <item>Washington</item>
+        <item>Quebec</item>
+    </string-array>
+</resources>
+
+
